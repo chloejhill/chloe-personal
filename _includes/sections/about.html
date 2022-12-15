@@ -1,0 +1,25 @@
+
+<!-- Section About -->
+<div class="section about" id="about-section">
+    <div class="fw">
+        <div class="row">
+            <div class="col col-m-12 col-t-6 col-d-6 animated">
+                <div class="profile-image image-3d">
+                    <div class="image-3d-card">
+                        <img src="{{ site.about_section.image' | relative_url }}" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col col-m-12 col-t-6 col-d-6 animated">
+                <div class="text-box">
+                    <h2>{{ site.about_section.title }}<span class="point"></span></h2>
+                    {{ site.about_section.description }}
+                </div>
+                <div class="bts animated">
+                    <a href="{{ site.about_section.download.link }}" class="btn"><i class="icon ion ion-android-download"></i>{{ site.about_section.download.text }}</a>
+                    <a href="{{ site.about_section.hire.link }}" class="btn extra">{{ site.about_section.hire.text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

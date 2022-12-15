@@ -1,0 +1,23 @@
+<!-- Section Service -->
+<div class="section service" id="service-section">
+    <div class="fw">
+        <div class="titles align-left animated">
+            <div class="title">{{ site.service_title }}<span class="point"></span></div>
+            <div class="subtitle">{{ site.service_description }}</div>
+        </div>
+        <div class="row">
+            {%- for service in site.service -%}
+            <div class="col col-m-12 col-t-4 col-d-4 animated">
+                <div class="service-item">
+                    <div class="name">{{ service.title }}</div>
+                    <p>
+                        {{ service.description }}
+                    </p>
+                </div>
+            </div>
+            {%- endfor -%}
+
+        </div>
+
+    </div>
+</div>

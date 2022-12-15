@@ -1,0 +1,18 @@
+<!-- Section Service -->
+<div class="section service" id="clients-section">
+    <div class="fw">
+        <div class="titles align-left animated">
+            <div class="title">{{ site.clients_title }}<span class="point"></span></div>
+            <div class="subtitle">{{ site.clients_description }}</div>
+        </div>
+        <div class="row">
+            {%- for client in site.clients -%}
+            <div class="col col-m-12 col-t-4 col-d-4 animated">
+              <img src="{{ client.image }}" alt="Logo from client {{ client.name }}">
+            </div>
+            {%- endfor -%}
+
+        </div>
+
+    </div>
+</div>

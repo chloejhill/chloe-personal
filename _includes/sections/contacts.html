@@ -1,0 +1,46 @@
+<!-- Section Contacts -->
+<div class="section contacts" id="contact-section">
+    <div class="fw">
+        <div class="titles align-left animated">
+            <div class="title">contact me<span class="point"></span></div>
+            <div class="subtitle">ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+        </div>
+        <div class="contact-form">
+            <form method="post" action="https://getform.io/f/{{ site.get_form_id }}">
+                <div class="row">
+                    <div class="col col-m-12 col-t-6 col-d-6 animated">
+                        <div class="value">
+                            <input type="text" name="name" placeholder="name *" />
+                        </div>
+                    </div>
+                    <div class="col col-m-12 col-t-6 col-d-6 animated">
+                        <div class="value">
+                            <input type="tel" name="tel" placeholder="phone *" />
+                        </div>
+                    </div>
+                    <div class="col col-m-12 col-t-6 col-d-6 animated">
+                        <div class="value">
+                            <input type="text" name="email" placeholder="email *" />
+                        </div>
+                    </div>
+                    <div class="col col-m-12 col-t-6 col-d-6 animated">
+                        <div class="value">
+                            <input type="text" name="subject" placeholder="subject *" />
+                        </div>
+                    </div>
+                    <div class="col col-m-12 col-t-12 col-d-12 animated">
+                        <div class="value">
+                            <textarea name="message" placeholder="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col col-m-12 col-t-12 col-d-12 animated">
+                        <a href="#" class="btn" onclick="$('#cform').submit(); return false;"><i class="icon ion ion-android-send"></i>Send Message</a>
+                    </div>
+                </div>
+            </form>
+            <div class="alert-success">
+                <p>Thanks, your message is sent successfully. We will contact you shortly!</p>
+            </div>
+        </div>
+    </div>
+</div>

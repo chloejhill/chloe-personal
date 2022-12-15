@@ -1,0 +1,9 @@
+<!-- Footer -->
+<footer class="align-center">
+    <div class="copy animated">© {{ site.time | date: '%Y' }} {{ site.author }}. all rights reserved.</div>
+    <div class="st-soc animated">
+        {%- for social in site.social_link -%}
+        <a target="blank" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a>
+        {%- endfor -%}
+    </div>
+</footer>

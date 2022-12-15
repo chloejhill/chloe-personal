@@ -1,0 +1,41 @@
+<!-- Section Portfolio -->
+<div class="section works" id="works-section">
+    <div class="fw">
+        <div class="titles align-left animated">
+            <div class="title">{{ site.portfolio_title }}<span class="point"></span></div>
+            <div class="subtitle">{{ site.portfolio_description}}</div>
+        </div>
+        <div class="row box-items">
+
+            {%- for portfolio in site.portfolios -%}
+            <div class="col col-m-12 col-t-6 col-d-6 box-item animated">
+                <div class="image image-3d">
+                    <div class="image-3d-card">
+                        <a href="#popup-{{ forloop.index }}" class="has-popup">
+                            <img src="{{ portfolio.image | relative_url }}" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div id="popup-{{ forloop.index }}" class="popup-box mfp-fade mfp-hide">
+                    <div class="content">
+                        <div class="image">
+                            <img src="{{ portfolio.image | relative_url }}" alt="">
+                        </div>
+                        <div class="desc">
+                            <h4>{{ portfolio.title }}</h4>
+                            <p>
+                                {{ portfolio.description }}
+                            </p>
+                            <a href="{{ portfolio.link }}" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+
+        </div>
+        <!-- <div class="bts align-center animated">
+            <a href="#" class="btn"><i class="icon ion ion-android-refresh"></i>Load more</a>
+        </div> -->
+    </div>
+</div>
