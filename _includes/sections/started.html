@@ -1,5 +1,25 @@
 <!-- Section Started -->
-<div class="section started">
+
+<div class="wrapper">
+  <nav class="site-nav">
+    <h1 class="logo">{{ site.first_name }} {{ site.last_name }}</h1>
+
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+
+    <ul class="open desktop">
+      <li><a href="#start">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#contact">Contact me</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="start" class="section started">
 {%- if site.home_style == 'background-color' -%}
     <div class="slide" style="background-image: url({{ 'images/hero.jpg' | relative_url }});"></div>
 {%- elsif site.home_style == 'particles-bg' -%}
